@@ -24,10 +24,10 @@ rollBtn.addEventListener('click', function () {
     const tempScore = document.querySelector('.player--active .current-score');
     let randomNum = Math.floor(Math.random() * 6) + 1;
     if (randomNum === 1) {
-      dice.src = `dice-${randomNum}.png`;
+      dice.src = `./img/dice-${randomNum}.png`;
       changePlayer();
     } else {
-      dice.src = `dice-${randomNum}.png`;
+      dice.src = `./img/dice-${randomNum}.png`;
       tempScore.textContent = Number(tempScore.textContent) + randomNum;
     }
   }
